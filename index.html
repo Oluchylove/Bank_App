@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Assets/Css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <title>Bank_template Page</title>
+</head>
+<body>
+    <div class="container">
+        <div class="App-cont">
+            <div class="d-flex justify-content-between">
+                <img src="./Assets/images/moon.png" class="logo">
+                <p>Hi, Lawvey!</p>
+                <span><i class="bi bi-bell-fill icon"></i></span>
+            </div>
+            <div class="mt-2"></div>
+            <div class="Account d-flex justify-content-between">
+                <div class="d-flex">
+                    <div>
+                        <img src="./Assets/images/girl.jpg" class="rounded-circle acc-img">
+                    </div>
+                    <div>
+                        <span class="bal">Balance</span>
+                        <h3 id="balance">$3,600,000</h3>
+                    </div>
+                </div>
+                <button class="btn-icon"><i class="bi bi-eye-fill icon" onclick="myFunction()"></i></button>
+            </div>
+            <div class="d-img">
+                <img src="./Assets/images/card-1.png" class="d-imgsub" >
+            </div>
+            
+            <div class="d-flex activities">
+                <div class="send">
+                    <span><i class="bi bi-send icon mt-3"></i></span>
+                    <h5 class="mt-1">Send</h5>
+
+                </div>
+                <div class="send">
+                    <span><i class="bi bi-download icon mt-3"></i></span>
+                    <h5 class="mt-1">Request</h5>
+
+                </div>
+                <div class="send">
+                    <span><i class="bi bi-grid icon mt-3"></i></span>
+                    <h5 class="mt-1">More</h5>
+
+                </div>
+            </div>
+            <div class="mt-5"></div>
+            <div class="transaction">
+                <div class="d-flex justify-content-between">
+                    <h4>Transactions</h4>
+                    <span><i class="bi bi-search icon"></i></span>
+                </div>
+                <div class="mt-"></div>
+                <div class="d-flex justify-content-between">
+                   <div class="d-flex">
+                        <div class="food">
+                            <i class="bi bi-water icon"></i>
+                        </div>
+                        <div>
+                            <h6 class=" mb-0">Food store</h6>
+                            <span class="text-muted">15-36</span>
+                        </div>
+                   </div>
+                   <h6>$-173.80</h6>
+                </div>
+
+                <div class="d-flex justify-content-between mt-3">
+                    <div class="d-flex">
+                         <div class="food">
+                             <i class="bi bi-vr icon"></i>
+                         </div>
+                         <div>
+                             <h6 class=" mb-0">Devon lane</h6>
+                             <span class="text-muted">15-36</span>
+                         </div>
+                    </div>
+                    <h6>$100.00</h6>
+                </div>
+
+                <div class="d-flex justify-content-between mt-3">
+                    <div class="d-flex">
+                         <div class="food">
+                            <i class="bi bi-cart4 icon"></i>
+                         </div>
+                         <div>
+                             <h6 class=" mb-0">Shopping</h6>
+                             <span class="text-muted">15-36</span>
+                         </div>
+                    </div>
+                    <h6>-$21.80</h6>
+                </div>
+
+                <div class="d-flex justify-content-between mt-3">
+                    <div class="d-flex">
+                         <div class="food">
+                             <i class="bi bi-house icon"></i>
+                         </div>
+                         <div>
+                             <h6 class=" mb-0">House rent</h6>
+                             <span class="text-muted">15-36</span>
+                         </div>
+                    </div>
+                    <h6>+$800.00</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function myFunction(){
+            var x=document.getElementById("balance");
+            if(x.innerHTML==="$3,600,000"){
+                x.innerHTML="********";
+            }
+            else{
+                x.innerHTML="$3,600,000";
+            }
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script></body>
+</body>
+</html>
